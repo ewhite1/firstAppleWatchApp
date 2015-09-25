@@ -4,7 +4,7 @@ changes the title of the button when you press on it. Randomizes the title from 
 
 TODO:
 
-  * layout issues. Clean up the visual presentation. (space from labels is bad!)	
+  * layout issues. Clean up the visual presentation. (space around labels is bad!)	
   * add a full screen button, or change the label being the button to to create the change
   * have the button create sound event
   
