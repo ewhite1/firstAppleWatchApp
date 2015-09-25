@@ -10,17 +10,26 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TestApp_1_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label width="136" height="25" alignment="left" text="A State" textAlignment="left" id="JNW-Ja-zIW"/>
-                        <label width="56" height="30" alignment="left" text="of" textAlignment="left" id="fLR-Mz-zRy"/>
-                        <button width="78" height="29" alignment="left" title="Button" id="STY-TC-hXG">
-                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <button width="78" height="29" alignment="center" verticalAlignment="bottom" title="change" id="STY-TC-hXG">
+                            <color key="backgroundColor" white="0.051986578263734526" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="pressedButton" destination="AgC-eL-Hgc" id="eLc-RE-BLG"/>
                             </connections>
                         </button>
+                        <label width="136" height="21" alignment="left" verticalAlignment="center" text="A State" textAlignment="left" id="JNW-Ja-zIW">
+                            <fontDescription key="font" type="system" pointSize="22"/>
+                        </label>
+                        <label width="56" height="16" alignment="left" verticalAlignment="center" text="of" textAlignment="left" id="fLR-Mz-zRy">
+                            <fontDescription key="font" type="system" pointSize="22"/>
+                        </label>
+                        <label width="136" height="62" alignment="left" verticalAlignment="center" text="Trance" textAlignment="left" numberOfLines="2" id="nQV-2G-2cU">
+                            <fontDescription key="font" type="system" pointSize="22"/>
+                        </label>
+                        <separator alignment="left" verticalAlignment="center" id="f2Z-LQ-Z66"/>
                     </items>
                     <connections>
                         <outlet property="actionButton" destination="STY-TC-hXG" id="l6D-Qc-P52"/>
+                        <outlet property="lblLabel" destination="nQV-2G-2cU" id="205-7a-Hxe"/>
                     </connections>
                 </controller>
             </objects>

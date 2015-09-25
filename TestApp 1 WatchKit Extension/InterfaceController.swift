@@ -14,13 +14,14 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
     
-    let states = ["goofy", "hard House", "Stupidity", "crazy", "nashious", "coffee", "Itching"]
+    let states = ["Rock", "Hard House", "Trap", "Electro", "Techno", "Happy Hardcore", "Hip Hop", "HardStyle", "House Music", "Drum and Bass", "Sleep"]
    
+    // testing the changing of a label
+    @IBOutlet var lblLabel: WKInterfaceLabel!
     
     @IBOutlet var actionButton: WKInterfaceButton!
     @IBAction func pressedButton() {
-        let numGen = Int(arc4random_uniform(7))
-        actionButton.setTitle("\(states[numGen])")
+        changeText()
         //print ("\(states[numGen])")
     }
     override func awakeWithContext(context: AnyObject?) {
@@ -39,4 +40,10 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
+    func changeText() {
+        let numGen = Int(arc4random_uniform(10))
+        //actionButton.setTitle("\(states[numGen])")
+        lblLabel.setText("\(states[numGen])")
+    }
+    
 }
