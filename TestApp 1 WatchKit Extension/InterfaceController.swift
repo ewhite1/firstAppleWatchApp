@@ -13,15 +13,16 @@ import Foundation
 // from an array, to create
 
 class InterfaceController: WKInterfaceController {
-    
+    // the musical genres in the array.
     let states = ["Rock", "Hard House", "Trap", "Electro", "Techno", "Happy Hardcore", "Hip Hop", "HardStyle", "House Music", "Drum and Bass", "Sleep"]
    
-    // testing the changing of a label
+    //
     @IBOutlet var lblLabel: WKInterfaceLabel!
     
     @IBOutlet var actionButton: WKInterfaceButton!
     @IBAction func pressedButton() {
         changeText()
+        //only for testing purposes. Uncomment if needed
         //print ("\(states[numGen])")
     }
     override func awakeWithContext(context: AnyObject?) {
@@ -39,7 +40,8 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
-
+//the main function that changes the text from items in the array.
+//uses a random number generator(numGen) to do this
     func changeText() {
         let numGen = Int(arc4random_uniform(10))
         //actionButton.setTitle("\(states[numGen])")
